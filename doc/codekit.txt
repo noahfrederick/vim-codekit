@@ -1,0 +1,59 @@
+*codekit.txt*	CodeKit 2 support for Vim
+Noah Frederick                                         *CodeKit.vim* *codekit*
+
+==============================================================================
+CONTENTS                                                    *codekit-contents*
+  1. Introduction..............................................|codekit-intro|
+  2. Commands...............................................|codekit-commands|
+  3. About.....................................................|codekit-about|
+
+==============================================================================
+INTRODUCTION                                                   *codekit-intro*
+
+Support for controlling CodeKit 2 from Vim. CodeKit.vim uses CodeKit's
+AppleScript interface to provide the following features:
+
+  * Add the current project to CodeKit
+  * Switch to the current file's project
+  * Preview the current project in a browser
+  * Pause and unpause CodeKit's watching of project files
+
+This plug-in is only available if 'compatible' is not set.
+
+==============================================================================
+COMMANDS                                                    *codekit-commands*
+
+:CKadd [directory]                                                    *:CKadd*
+  Add the current working directory as a project to CodeKit. If [directory] is
+  supplied, use it as the project root instead.
+
+:CKfocus [path]                                                     *:CKfocus*
+  Focus the project to which the current buffer's file belongs. Focusing a
+  project makes it active in CodeKit. If [path] is supplied, focus that file
+  or directory instead.
+
+:CKpreview [browser]                                              *:CKpreview*
+  Preview the focused project in the default browser. If [browser] is
+  supplied, use that browser instead. See the provided completion for
+  supported browser names.
+
+:CKpause                                                            *:CKpause*
+  Pause CodeKit's watching of project files (has no effect if already paused).
+
+:CKunpause                                                        *:CKunpause*
+  Resume CodeKit's watching of project files (has no effect if already
+  unpaused).
+
+==============================================================================
+ABOUT                                                          *codekit-about*
+
+CodeKit.vim is distributed under the same terms as Vim itself (see |license|)
+
+You can find the latest version of this plug-in on GitHub:
+https://github.com/noahfrederick/vim-codekit
+
+Please report issues on GitHub as well:
+https://github.com/noahfrederick/vim-codekit/issues
+
+
+vim:tw=78:ts=8:ft=help:norl:
