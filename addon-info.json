@@ -1,6 +1,6 @@
 {
 	"name":        "codekit",
-	"version":     "0.2.0",
+	"version":     "1.0.0",
 	"author":      "Noah Frederick",
 	"description": "CodeKit 2 support for Vim",
 	"homepage":    "https://github.com/noahfrederick/vim-codekit"

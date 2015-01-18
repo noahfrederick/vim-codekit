@@ -2,8 +2,6 @@
 
 CodeKit 2 support for Vim
 
-*Note: this is a prerelease version, which may change or break frequently.*
-
 ## Features
 
 CodeKit.vim provides support for controlling [CodeKit 2][ck] from Vim. It uses
