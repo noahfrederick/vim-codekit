@@ -42,9 +42,9 @@ command! -bar -nargs=? -complete=dir CKadd call codekit#add(<q-args>)
 command! -bar -nargs=? -complete=file CKfocus call codekit#focus(<q-args>)
 
 ""
-" Preview the focused project in the default browser. If [browser] is
-" supplied, use that browser instead. See the provided completion for
-" supported browser names.
+" Focus the project to which the current buffer's file belongs and preview it
+" in the default browser. If [browser] is supplied, use that browser instead.
+" See the provided completion for supported browser names.
 command! -bar -nargs=? -complete=customlist,codekit#complete_browser CKpreview call codekit#preview(<q-args>)
 
 ""

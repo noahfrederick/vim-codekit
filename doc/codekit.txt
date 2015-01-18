@@ -33,9 +33,9 @@ COMMANDS                                                    *codekit-commands*
   or directory instead.
 
 :CKpreview [browser]                                              *:CKpreview*
-  Preview the focused project in the default browser. If [browser] is
-  supplied, use that browser instead. See the provided completion for
-  supported browser names.
+  Focus the project to which the current buffer's file belongs and preview it
+  in the default browser. If [browser] is supplied, use that browser instead.
+  See the provided completion for supported browser names.
 
 :CKpause                                                            *:CKpause*
   Pause CodeKit's watching of project files (has no effect if already paused).

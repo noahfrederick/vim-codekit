@@ -39,6 +39,8 @@ function! codekit#focus(path)
 endfunction
 
 function! codekit#preview(browser)
+  call codekit#focus('')
+
   if a:browser ==# ''
     call s:tell_codekit_to('preview in browser')
   else
